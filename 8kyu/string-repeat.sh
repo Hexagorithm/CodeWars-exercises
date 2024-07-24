@@ -18,7 +18,7 @@ function main(){
 				;;
 			*)
 				int=$1
-				if ! [[ $int =~ [0-9]+$ ]]; then
+				if ! [[ $int =~ ^[0-9]+$ ]]; then
 					echo "$0: \"$int\" not valid positive integer"
 					exit 1
 				fi
