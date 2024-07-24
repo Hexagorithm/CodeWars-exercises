@@ -57,11 +57,11 @@ function main () {
 	strt=$(( $strt ))
 	end=$(( $end ))
 	if [[ $strt -lt $end ]]; then
-		for (( it = $strt; $it < $end ;  it++ )); do
+		for (( it = $strt; it < $end;  it++ )); do
 			echo "($it)-> \"$($comm $it)\""
 		done
 	else
-		for (( it=$strt; it -lt $end ;  it-- )); do
+		for (( it=$strt; it < $end ;  it-- )); do
 			echo "($it)-> \"$($comm $it)\""
 		done
 	fi
