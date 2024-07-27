@@ -101,20 +101,6 @@ function main () {
 
 
 	### directory and file checks
-	# directory checks should ALWAYS go before file checks
-	# if "lang_dir" does not exist, offer to create it
-	# if "diff_dir" does not exist, offer to create it
-	# if "skel_file"does not exist, enable user to input file name
-	# if "scriptname" already exists, offer to proceed
-	#  that way scriptname will be wiped to contain skel_file
-		
-	# general offer syntax:
-		# "Do you want to create dir / send file / proceed with scriptname" -> input
-			# if yes on dir 	create dir		CONTINUE
-			# if yes on skelfile	ask for file	mv file CONTINUE
-			# if yes on scriptname				CONTINUE
-			# if no						TERMINATE
-
 
 	lang_dir="${language}${lang_dir}"
 	if ! [[ -d $lang_dir ]]; then
